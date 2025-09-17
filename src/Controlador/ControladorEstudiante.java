@@ -1,33 +1,27 @@
 package Controlador;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Modelo.Estudiante;
 import Vista.VistaEstudiante;
 
 public class ControladorEstudiante {
-    private Estudiante modelo;
+    private List<Estudiante> estudiantes;
     private VistaEstudiante vista;
 
-    public ControladorEstudiante (Estudiante modelo, VistaEstudiante vista){
-        this.modelo = modelo;
+    public ControladorEstudiante(Estudiante modelo, VistaEstudiante vista) {
         this.vista = vista;
+        this.estudiantes = new ArrayList<Estudiante>();
+
     }
 
-    public void setNombreEstudiante(String nombre) {
-        this.modelo.setNombre(nombre);
+    public void actualizarVista() {
+        vista.mostrarDetallesEstudiante(estudiantes);
     }
 
-    public String getNombreEstudiante() {
-        return this.modelo.getNombre();
+    public void agregarEstudiante(Estudiante estudiante) {
+        this.estudiantes.add(estudiante);
     }
 
-    public void setEdadEstudiante(int edad) {
-        this.modelo.setEdad(edad);
-    }
-
-    public int getEdadEstudiante() {
-        return this.modelo.getEdad();
-    }
-    public void actualizarVista(){
-        vista.mostrarDetallesEstudiante(modelo.getNombre(), modelo.getEdad());
-    }
 }

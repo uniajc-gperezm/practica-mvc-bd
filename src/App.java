@@ -6,23 +6,17 @@ import Vista.VistaEstudiante;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-
-        Estudiante estudiante = new Estudiante(" ", 0);
-
-        VistaEstudiante vista = new VistaEstudiante();
-
-        ControladorEstudiante controlador = new ControladorEstudiante(estudiante, vista);
-
+        System.out.println("********** Aplicacion MVC - Estudiante **********");
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el nombre del estudiante: ");
-        String nombre = sc.nextLine();
-        controlador.setNombreEstudiante(nombre);
-
+        String nombre = scanner.nextLine();
         System.out.print("Ingrese la edad del estudiante: ");
-        int edad = sc.nextInt();
-        controlador.setEdadEstudiante(edad);
-
-        // Mostrar datos ingresados
+        int edad = scanner.nextInt();
+        Estudiante modelo = new Estudiante(nombre, edad);
+        VistaEstudiante vista = new VistaEstudiante();
+        ControladorEstudiante controlador = new ControladorEstudiante(modelo, vista);
         controlador.actualizarVista();
-}
+        // scanner.close();
+        scanner.close();
+    }
 }

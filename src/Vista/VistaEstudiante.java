@@ -1,9 +1,15 @@
 package Vista;
-
+import Modelo.Estudiante;
+import java.util.List;
 public class VistaEstudiante {
-    public void mostrarDetallesEstudiante(String nombre, int edad){
-        System.out.println("\n******* Informacion del Estudiante *******");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad + " años");
+    public void mostrarDetallesEstudiante(List<Estudiante> estudiantes) {
+       /*  for (Estudiante estudiante : estudiantes) {
+            System.out.println("Detalles del Estudiante:");
+            System.out.println("Nombre: " + estudiante.getNombre());
+            System.out.println("Edad: " + estudiante.getEdad());
+        }*/
+        estudiantes.forEach(estudiante -> {
+            System.out.println("Nombre: " + estudiante.getNombre() + " - " + "Edad: " + estudiante.getEdad());
+        });
     }
 }
