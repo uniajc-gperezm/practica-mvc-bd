@@ -17,7 +17,7 @@ import modelo.Estudiante;
 
             estudiantes.forEach(estudiante -> {
                 System.out.println("Nombre" + estudiante.getNombre());
-                System.out.println("Nombre" + estudiante.getEdad());
+                System.out.println("Edadd" + estudiante.getEdad());
             });
         }
     }
