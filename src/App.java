@@ -10,7 +10,14 @@ public class App {
     VistaEstudiante vista = new VistaEstudiante();
     ControladorEstudiante controlador = new ControladorEstudiante(vista);
      
+    
+    //Se va a agregar el apellido
+    estudiante1.setNombre("Alejandra Rivera");
     controlador.agregarEstudiante(estudiante1);
+
+
+    
+    
 
     
 
