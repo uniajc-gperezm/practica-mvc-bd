@@ -1,10 +1,9 @@
 package controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import model.Student;
+import java.util.List;
 import view.StudentView;
+import java.util.ArrayList;
 
 public class StudentController {
 
@@ -22,6 +21,5 @@ public class StudentController {
 
     public void addStudent(Student student) {
         students.add(student);
-        updateView();
     }
 }
