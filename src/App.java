@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-import Controlador.*;
-import Modelo.Estudiante;
-import Vista.VistaEstudiante;
+import controlador.*;
+import modelo.Estudiante;
+import vista.VistaEstudiante;
 
 public class App {
     public static void main(String[] args) throws Exception {

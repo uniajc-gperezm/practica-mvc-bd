@@ -1,10 +1,10 @@
-package Controlador;
+package controlador;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Modelo.Estudiante;
-import Vista.VistaEstudiante;
+import modelo.Estudiante;
+import vista.VistaEstudiante;
 
 public class ControladorEstudiante {
     private List<Estudiante> estudiantes;

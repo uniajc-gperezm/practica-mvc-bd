@@ -1,6 +1,7 @@
-package Vista;
-import Modelo.Estudiante;
+package vista;
 import java.util.List;
+
+import modelo.Estudiante;
 public class VistaEstudiante {
     public void mostrarDetallesEstudiante(List<Estudiante> estudiantes) {
        /*  for (Estudiante estudiante : estudiantes) {
