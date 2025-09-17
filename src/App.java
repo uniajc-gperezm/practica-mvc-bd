@@ -12,9 +12,6 @@ public class App {
      
     controlador.agregarEstudiante(estudiante1);
 
-    controlador.actualizarVista();
-    
-
     
 
   }

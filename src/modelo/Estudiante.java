@@ -24,5 +24,6 @@ public class Estudiante {
     public void setEdad (int edad){
         this.edad =  edad;
     }
+
     
 }
